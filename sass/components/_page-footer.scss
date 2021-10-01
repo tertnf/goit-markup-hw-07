@@ -1,0 +1,70 @@
+/*--------------Footer-----------------*/
+
+.page-footer {
+  background-color: var(--third-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer .adr-text {
+  display: block;
+  margin-bottom: 9px;
+}
+.page-footer .site-contacts {
+  display: inline-block;
+}
+.page-footer .logo {
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+
+.page-footer .contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-footer .sosial-links {
+  margin: 0;
+}
+
+.page-footer .sosial-link {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .sosial-link:hover,
+.page-footer .sosial-link:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer .sosial-link {
+  transition: background-color 250ms var(--timing-function);
+  color: #ffffff;
+}
+
+.subscribe-text,
+.folow-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+
+.page-footer .logo-color {
+  color: var(--main-title-color);
+}
+
+.page-footer .contacts-link {
+  display: inline-block;
+}
