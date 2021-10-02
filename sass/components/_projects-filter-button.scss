@@ -7,12 +7,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  .hero-button.current {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
 }
-.filter-list-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter .hero-button.current {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+.filter-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

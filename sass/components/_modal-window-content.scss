@@ -10,15 +10,13 @@
   top: 8px;
   right: 8px;
   cursor: pointer;
-}
-
-.button-modal-close:hover,
-.button-modal-close:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-  outline: none;
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transition: fill 250ms $timing-function, border-color 250ms $timing-function;
+    outline: none;
+    border: 1px solid $accent-color;
+  }
 }
 
 .modal-close-icon {
@@ -40,6 +38,12 @@
 
   padding: 0;
   padding-left: 42px;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    transition: border-color 250ms $timing-function;
+    outline: none;
+  }
 }
 
 .modal-label {
@@ -73,8 +77,8 @@
   height: 50px;
   border-radius: 4px;
   color: #ffffff;
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
@@ -88,12 +92,11 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.modal-button:focus,
-.modal-button:hover {
-  box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
-  transition: box-shadow 250ms var(--timing-function);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
+    transition: box-shadow 250ms $timing-function;
+  }
 }
 
 .modal-field {
@@ -105,23 +108,29 @@
   margin-bottom: 20px;
 }
 
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
-  transition: fill 250ms var(--timing-function);
-}
-.modal-input:hover,
-.modal-input:focus {
-  border-color: var(--accent-color);
-  transition: border-color 250ms var(--timing-function);
-  outline: none;
+.modal-input {
+  &:hover,
+  &:focus {
+    + .modal-icon {
+      fill: $accent-color;
+      transition: fill 250ms $timing-function;
+    }
+  }
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
-  border-color: var(--accent-color);
-  transition: border-color 250ms var(--timing-function);
-  outline: none;
+/*.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+  fill: $accent-color;
+  transition: fill 250ms $timing-function;
+}*/
+
+.modal-comment {
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    transition: border-color 250ms $timing-function;
+    outline: none;
+  }
 }
 
 .modal-icon {
@@ -166,20 +175,32 @@
   margin-right: 8px;
 }
 
-.modal-check-box-input:focus + .modal-p-policy-icon,
-.modal-check-box-input:hover + .modal-p-policy-icon {
-  border: 2px solid var(--accent-color);
-  transition: border-color 250ms var(--timing-function);
+.modal-check-box-input {
+  &:focus,
+  &:hover {
+    + .modal-p-policy-icon {
+      border: 2px solid $accent-color;
+      transition: border-color 250ms $timing-function;
+    }
+  }
 }
 
-.modal-check-box-input:checked + .modal-p-policy-icon {
-  background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  border-radius: 2px;
-  background-image: url(../images/svg/background/vector8.svg);
-  background-size: contain;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
+/*.modal-check-box-input:focus + .modal-p-policy-icon,
+.modal-check-box-input:hover + .modal-p-policy-icon {
+  border: 2px solid $accent-color;
+  transition: border-color 250ms $timing-function;
+}*/
+
+.modal-check-box-input:checked {
+  + .modal-p-policy-icon {
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+    background-image: url(../images/svg/background/vector8.svg);
+    background-size: contain;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+  }
 }
 
 .modal-check-box-input {

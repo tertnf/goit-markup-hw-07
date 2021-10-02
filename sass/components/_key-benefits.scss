@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.key-text-item:not(:last-child) {
-  margin-right: 30px;
-}
 .key-text-item {
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .key-text-section {
@@ -23,13 +23,13 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-title-color);
+  color: $secondary-title-color;
 }
 .features-text {
   /*font-size: 14px;*/
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .antenna {

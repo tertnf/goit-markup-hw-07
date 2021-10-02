@@ -1,5 +1,7 @@
-.page-header .logo {
-  margin-right: 93px;
+.page-header {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo {
@@ -10,9 +12,9 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: "Raleway", sans-serif;
 }
 .logo-color {
-  color: var(--third-text-color);
+  color: $third-text-color;
 }

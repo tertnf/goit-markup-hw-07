@@ -30,6 +30,8 @@
   /*padding-top: 27px;*/
 }
 
-.works-list-item:not(:last-child) {
-  margin-right: 30px;
+.works-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }

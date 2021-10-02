@@ -1,11 +1,11 @@
-@import "./components/container";
+@import "./base/container";
 @import "./utils/variables";
 @import "./components/page-header";
 @import "./utils/utilites";
 @import "./components/common/logo";
 @import "./components/page-header";
 @import "./components/navigation";
-@import "./components/body";
+@import "./base/body";
 @import "./components/backdrop";
 @import "./components/modal-window";
 @import "./components/modal-window-content";
@@ -22,6 +22,6 @@
 @import "./components/hero-section";
 @import "./components/common/contacts-links";
 @import "./components/address";
-@import "./components/sections-settings";
+@import "./base/sections-settings";
 @import "./components/key-benefits";
 @import "./utils/hidden-title";

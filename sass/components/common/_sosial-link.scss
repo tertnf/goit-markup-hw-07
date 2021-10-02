@@ -22,16 +22,17 @@
 
   border-radius: 50%;
   /*padding: 12px 12px;*/
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
 }
 
-.sosial-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.sosial-link:hover,
-.sosial-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+.sosial-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
