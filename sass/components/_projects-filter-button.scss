@@ -1,4 +1,4 @@
-.filter-button {
+.filter__filter-button {
   padding: 6px 22px;
   cursor: pointer;
 }
@@ -7,12 +7,12 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  .hero-button.current {
+  .hero-button.filter__filter-button--current {
     color: $secondary-text-color;
     background-color: $accent-color;
   }
 }
-.filter-list-item {
+.filter__filter-list-item {
   &:not(:last-child) {
     margin-right: 8px;
   }

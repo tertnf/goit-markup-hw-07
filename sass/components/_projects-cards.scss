@@ -47,8 +47,8 @@
   opacity: 0;
   transform: translatey(100%);
   transition: transform 1250ms $timing-function, opacity 1250ms $timing-function;
-  .projects-item:hover &,
-  .projects-item-link:focus & {
+  .projects-list__projects-item:hover &,
+  .projects-list__projects-item-link:focus & {
     transform: translatey(0%);
     opacity: 1;
   }
