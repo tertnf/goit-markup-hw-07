@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.nav-list {
+.site-nav__nav-list {
   display: flex;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -12,17 +12,14 @@
   padding-left: 0px;
 }
 
-nav-item {
+.site-nav__nav-item {
   display: flex;
-}
-
-.nav-item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.nav-link {
+.site-nav__nav-link {
   position: relative;
 
   padding-top: 32px;
@@ -59,7 +56,7 @@ nav-item {
   }
 }
 
-.contacts-link {
+.site-contacts__contacts-link {
   &:hover,
   &:focus {
     color: $accent-color;
@@ -67,7 +64,7 @@ nav-item {
   }
 }
 
-.nav-link.current {
+.site-nav__nav-link.current {
   &::after {
     content: "";
     position: absolute;

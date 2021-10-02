@@ -1,17 +1,17 @@
 .page-header {
   background-color: $main-background-color;
   border: 1px solid #ececec;
-  .contacts-link {
+  .site-contacts__contacts-link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .contacts-item {
+  .site-contacts__contacts-item {
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
   .site-contacts {
-    .contacts-item + .contacts-item {
+    .site-contacts__contacts-item + .site-contacts__contacts-item {
       margin-left: 50px;
     }
   }

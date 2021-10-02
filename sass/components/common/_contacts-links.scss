@@ -1,4 +1,4 @@
-.contacts-link {
+.site-contacts__contacts-link {
   display: flex;
   align-items: center;
   color: $main-text-color;
@@ -16,7 +16,7 @@
   padding-left: 0px;
 }
 
-.contacts-icon-tel {
+.site-contacts__contacts-icon-tel {
   margin-right: 10px;
   vertical-align: middle;
   transition: fill 250ms $timing-function;
@@ -26,7 +26,7 @@
   }
 }
 
-.contacts-icon-letter {
+.site-contacts__contacts-icon-letter {
   margin-right: 10px;
   vertical-align: baseline;
   transition: fill 250ms $timing-function;
@@ -36,7 +36,7 @@
   }
 }
 
-.contacts-item {
+.site-contacts__contacts-item {
   &:focus,
   &:hover {
     fill: #2196f3;

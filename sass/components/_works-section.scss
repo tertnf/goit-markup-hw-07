@@ -2,15 +2,15 @@
   display: flex;
 }
 
-.works-title {
+.works-section__works-title {
   margin-bottom: 50px;
 }
 
-.works-list-overlay {
+.works-list__works-list-overlay {
   position: relative;
 }
 
-.works-list-text {
+.works-list__works-list-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   /*padding-top: 27px;*/
 }
 
-.works-list-item {
+.works-list__works-list-item {
   &:not(:last-child) {
     margin-right: 30px;
   }

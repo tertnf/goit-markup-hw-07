@@ -4,7 +4,7 @@
   background-color: $third-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
-  .adr-text {
+  .adr__adr-text {
     display: block;
     margin-bottom: 9px;
   }
@@ -20,7 +20,7 @@
   .sosial-links {
     margin: 0;
   }
-  .sosial-link {
+  .sosial-links__sosial-link {
     fill: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms $timing-function;
@@ -31,26 +31,26 @@
       background-color: #2196f3;
     }
   }
-  .logo-color {
+  .logo--logo-color {
     color: $main-title-color;
   }
-  .contacts-link {
+  .site-contacts__contacts-link {
     display: inline-block;
   }
-  .contacts-item {
+  .site-contacts__contacts-item {
     &:not(:last-child) {
       margin-bottom: 9px;
     }
   }
 }
 
-.footer-content {
+.page-footer__footer-content {
   display: flex;
   align-items: baseline;
 }
 
-.subscribe-text,
-.folow-text {
+.subscribe__subscribe-text,
+.folow__folow-text {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;

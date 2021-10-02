@@ -5,11 +5,11 @@
   margin-right: 32px;*/
   padding: 0;
 }
-.sosial-icon {
+.sosial-links__sosial-icon {
   fill: currentColor;
 }
 
-.sosial-link {
+.sosial-links__sosial-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
   }
 }
 
-.sosial-item {
+.sosial-links__sosial-item {
   &:not(:last-child) {
     margin-right: 10px;
   }
