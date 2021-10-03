@@ -16,16 +16,16 @@
 .clients-list__clients-link {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $fourth-background-color;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
+  color: $fourth-background-color;
   &:hover,
   &:focus {
-    color: #2196f3;
-    border: 1px solid #2196f3;
+    color: $accent-color;
+    border: 1px solid $accent-color;
     border-radius: 4px;
     transition: border 250ms $timing-function, color 250ms $timing-function;
   }

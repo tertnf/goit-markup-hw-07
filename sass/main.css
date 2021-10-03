@@ -221,7 +221,7 @@ body {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.folow__folow-input:-webkit-autofill,
+/*.folow__folow-input:-webkit-autofill,
 .folow__folow-input:-webkit-autofill:hover,
 .folow__folow-input:-webkit-autofill:focus,
 .folow__folow-input:-webkit-autofill:active,
@@ -234,7 +234,21 @@ body {
 .modal__modal-comment:-webkit-autofill:focus,
 .modal__modal-comment:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;*/
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}*/
+.folow__folow-input:-webkit-autofill:hover, .folow__folow-input:-webkit-autofill:focus, .folow__folow-input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset; ----------на эту строку ругается компилятор*/
+}
+
+.modal__modal-input:-webkit-autofill:hover, .modal__modal-input:-webkit-autofill:focus, .modal__modal-input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset; ----------на эту строку ругается компилятор*/
+}
+
+.modal__modal-comment:-webkit-autofill:hover, .modal__modal-comment:-webkit-autofill:focus, .modal__modal-comment:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /*-webkit-box-shadow: 0 0 0px 1000px #fff inset; ----------на эту строку ругается компилятор*/
 }
 
 .modal__modal-comment {
@@ -247,7 +261,6 @@ body {
 }
 
 .modal__modal-comment::placeholder {
-  /*font-size: 14px;*/
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -900,7 +913,7 @@ body {
   color: #ffffff;
 }
 
-.hero-button {
+.hero-section__hero-button {
   /*margin-bottom: 200px;*/
   font-weight: 700;
   font-size: 16px;
@@ -915,7 +928,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:focus, .hero-button:hover {
+.hero-section__hero-button:focus, .hero-section__hero-button:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(94, 68, 68, 0.25);
@@ -1097,4 +1110,3 @@ body {
   overflow: hidden;
   border: 0;
 }
-/*# sourceMappingURL=main.css.map */
